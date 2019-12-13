@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <form id="survey-form">
+      <table id="tab1" cellpadding="5" align="center">
+        <tr>
+          <p id="description" colspan="2" align="center"><b>Let us know how we can improve freeCodeCamp</b></p>
+        </tr>
+        <tr>
+          <td align="center"><label for="name" id="name-label">Name:</label></td>
+          <td><input type="text" id="name" name="name" required placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+          <td align="center"><label for="email" id="email-label">Email:</label></td>
+          <td><input type="email" id="email" name="email" required placeholder="Enter your Email"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            <label for="number" id="number-label">Age:</label>
+          </td>
+          <td>
+            <input type="number" id="number" name="number" placeholder="Age" min="1" max="100">  
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><label for="dropdown" id="dropdown-label">Which option best describes your current role?</label></td>
+          <td><select id="dropdown">
+            <option value="">--Please choose an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            <label for="radio-buttons" id="radio-label">How likely is that you would recommend<br>freeCodeCamp to a friend?</label> 
+          </td>
+          <td>
+            <label><input type="radio" name="sure" value="definitely" class="radio-buttons">Definitely</label><br><br>
+            <label><input type="radio" name="sure" value="maybe" class="radio-buttons">Maybe</label><br><br>
+            <label><input type="radio" name="sure" value="not-sure" class="radio-buttons">Not sure</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><label for="second-dropdown" id="second-dropdown-label">What do you like most in FCC?</label></td>
+          <td><select id="second-dropdown">
+            <option value="">--Please choose an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"><label for="check" id="improve-label">Things that should be improved in the future<br>(Check all that apply):</label></td>
+          <td>
+            <label><input type="checkbox" name="improve" value="front-end" class="check">Front-end Projects</label><br><br>
+            <label><input type="checkbox" name="improve" value="back-end" class="check">Back-end Projects</label><br><br>
+            <label><input type="checkbox" name="improve" value="data" class="check">Data Visualization</label><br><br>
+            <label><input type="checkbox" name="improve" value="challenges" class="check">Challenges</label><br><br>
+            <label><input type="checkbox" name="improve" value="open-source" class="check">Open Source Community</label><br><br>
+            <label><input type="checkbox" name="improve" value="gitter" class="check">Gitter help rooms</label><br><br>
+            <label><input type="checkbox" name="improve" value="videos" class="check">Videos</label><br><br>
+            <label><input type="checkbox" name="improve" value="meetups" class="check">City Meetups</label><br><br>
+            <label><input type="checkbox" name="improve" value="wiki" class="check">Wiki</label><br><br>
+            <label><input type="checkbox" name="improve" value="forum" class="check">Forum</label><br><br>
+            <label><input type="checkbox" name="improve" value="additional" class="check">Additional Courses</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            <label for="comments" class="comments-label">Any Comments or Suggestions?</label>
+          </td>
+          <td><textarea id="comments" name="comments" placeholder="Enter your comment here...">
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <button id="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
