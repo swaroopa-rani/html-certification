@@ -1,0 +1,96 @@
+#header-img {
+  vertical-align: top;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: 'Roboto';
+  position: absolute;
+  top: 30px;
+  padding-left: 36%;
+  color: black;
+}
+
+nav li {
+  display: inline;
+  margin-right: 50px;
+  font-family: Roboto, serif;
+  font-size: 20px;
+  vertical-align: -80px;
+}
+
+#nav-bar {
+  overflow: hidden;
+  float: right;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  width: 100%;
+}
+
+a:hover {
+  background-color: yellow;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: #654321;
+}
+a:active {
+  color: blue;
+}
+
+#form,
+.videoplay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  flex-wrap: all;
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+p {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  flex-wrap: all;
+  font-family: Roboto;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+#topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html {
+  background: url('https://st3.depositphotos.com/3258807/18738/i/1600/depositphotos_187386038-stock-photo-cheerful-pleasant-woman-leaning-to.jpg')
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #ffffff00;
+  }
+}
